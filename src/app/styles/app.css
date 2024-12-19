@@ -1,0 +1,217 @@
+/* Default Mobile Styles. Inheritted By Desktop */
+* {
+  color: black;
+  margin:auto;
+  font-weight: 150;
+  list-style: none;
+}
+.hidden {
+  display: none;
+  content: none;
+}
+
+/* Navbar */
+
+.navbar {
+  text-align: right;
+  background-color: antiquewhite;
+  border: thin solid, black;
+  display: flex;
+  justify-content: space-between;
+  top: 0px;
+  width: 100%;
+  height: 70px;
+}
+.logoBox {
+  display: block;
+  left: 1rem;
+  margin: auto;
+  position: absolute;
+}
+.logo {
+  max-width: 100%;
+  object-fit: cover;
+  padding: 0.5rem;
+  border-radius:12px;
+}
+/* .logo {
+  min-width: 50px;
+  min-height: 50px;
+  max-width: 75px;
+  max-height: 75px;
+  padding: 0.5rem;
+  border-radius:15px;
+} */
+.navbarButton {
+  position: absolute;
+  right: 3rem;
+  top: 0.75rem;
+  background:antiquewhite;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  font-size: 2rem;
+}
+.navbarMenuLinks{
+  justify-content: right;
+  background: antiquewhite;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  height: 150px;
+  width:auto;
+  overflow: hidden;
+  overflow-y: auto;
+  text-align: center;
+  border-radius: 8px;
+  border: solid thin black;
+}
+.navbarMenuLinks li {
+  list-style: none;
+  font-size: larger;
+  text-wrap: nowrap;
+  margin: 4px;
+  border: thin solid, black;
+  border-radius: 4px;
+  padding: 4px;
+}
+.navbarMenuLinks li a:hover {
+  color: blue;
+  text-decoration: none;
+}
+
+/* Content */
+
+.content {
+  background-color: aliceblue;
+  justify-content: center;
+  text-align: center;
+  text-wrap: wrap;
+  border: thin solid, black;
+  width: auto;
+  top: 70px;
+  padding: 1rem;
+}
+.content h1 {
+  text-decoration: underline;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+/* Footer */
+
+.footer {
+  border: thin solid, black;
+  background-color:antiquewhite;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Courses Course Table */
+
+.coursesTable {
+  overflow: hidden;
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+table,td,th{
+  padding: 1rem;
+  font-weight: 500;
+}
+th{
+  font-size: larger;
+  text-wrap: nowrap;
+  background: hsl(from antiquewhite 0 0% 0% /0.3);
+  border-top: thin solid black;
+  border-bottom: thin solid  black;
+}
+tr:nth-of-type(2n){
+  background: hsl(from antiquewhite 0 0% 0% /0.1);
+}
+
+.findUsTable {
+  border: solid thin black;
+}
+.findUsTable tr {
+  border-bottom: solid thin black;
+}
+.findUsTable td {
+  border-right: dashed thin black;
+}
+
+.infomationTable {
+  border: thin solid black;
+  overflow: hidden;
+  overflow-x: auto;
+}
+.infomationTable tr {
+  border-bottom:solid thin black;
+}
+.infomationTable td {
+  border-right: thin dashed black;
+}
+
+.workingWithBusiness li {
+  list-style: none;
+  padding-top: 1rem;
+}
+
+.contactUsForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.contactUsForm label {
+  font-size: large;
+  text-decoration: underline;
+
+}
+.contactUsForm input {
+  min-width: 75%;
+  min-height: 50px;
+  border: thin solid black;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.contactUsAlert {
+  padding: 0.5rem;
+  border: solid thin black;
+  border-radius: 8px;
+}
+
+.button {
+  border: solid thin black;
+  background: inherit;
+  font: inherit;
+  padding: 0.5rem;
+}
+
+.imageSlide {
+  width: 100%;
+  object-fit: contain;
+}
+ul {
+  padding: 0.5rem;
+}
+
+.imageScrollerWrapper {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  overflow-x: hidden;
+  border-radius: 8px;
+  scrollbar-width: 0;
+}
+.imageScrollerImage {
+  width: max-content;
+  object-fit: cover;
+}
+
+/* Desktop Styles */
